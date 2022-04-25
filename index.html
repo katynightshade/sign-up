@@ -5,19 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/mountain-icon.svg">
     <title>Sign Up Page</title>
 </head>
 <body>
     <div class="column-left">
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="img/mountain-icon.svg" alt="Mountain Icon">
+            <h1>Wild Wonders</h1>
+        </div>
         <div class="source">
             <p class="picsource">Photo by Halie West on Unsplash</p>
         </div>
     </div>
     <div class="column-right">
-        <div class="hero"></div>
+        <div class="hero">Get your next adventure started with Wild Wonders! We know you're here for a reason; fill out this form and get access to all of the adventures we hold in store!</div>
         <div class="form">
-            
+            <form action="/index.html" method="post">
+                <div class="box-text">
+                    <h2>Sign Up Here!</h2>
+                    <label for="f-name">First Name</label>
+                    <input type="text" id="f-name" name="f-name">
+                    <label for="l-name"> Last Name</label>
+                    <input type="text" id="l-name" name="l-name">
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                    <label for="user-phone">Phone Number</label>
+                    <input type="tel" id="user-phone" name="phone">
+                    <label for="user-password">Password</label>
+                    <input type="password" name="password" id="user-password">
+                    <label for="confirm-pass">Confirm Password</label>
+                    <input type="password" id="confirm-pass" name="confirm-password">
+                </div>
+                <div class="submit">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <div class="log-in">
+            <p>Already have an account? <a href="#!">Log in</a></p>
         </div>
     </div>
 </body>
