@@ -1,1 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+html {
+    min-height: 100vh;
+}
+
+:root {
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: var(--font-family);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.column-left {
+    background: url(img/form-pic.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-family: 'Quicksand', var(--font-family);
+}
+
+.logo > img {
+    width: 25%;
+}
+
+.source {
+    position: absolute;
+    bottom: 5px;
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 20px;
+    background-color: rgb(238, 243, 248);
+}
+
+.hero {
+    font-size: 1.4rem;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-text {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.box-text > h2 {
+    font-family: 'Quicksand', var(--font-family);
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.field   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+    color: rgba(54, 53, 53, 0.87);
+}
+
+.submit {
+    padding: 20px 30px 0 30px;
+}
+
+.submit > button {
+    border-style: none;
+    background-color: #b84406d9;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.log-in {
+    padding: 0 30px;
+}
+
+.loginlink {
+    color: #b84406d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.loginlink:hover {
+    text-decoration: underline;
+}
+
+.loginlink:visited {
+    color: #6b4734;
+}
