@@ -100,6 +100,10 @@ input {
     padding: 2px;
 }
 
+input:not(:focus):valid {
+    border-color: green;
+}
+
 .submit {
     padding: 20px 30px 0 30px;
 }
