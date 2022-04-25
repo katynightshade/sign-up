@@ -87,7 +87,6 @@ body {
 .field   {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: baseline;
     gap: 5px;
     color: rgba(54, 53, 53, 0.87);
@@ -101,14 +100,30 @@ input {
     padding: 2px;
 }
 
-.pass-valid {
-    display: none;
-    color: red;
-    font-size: 10px;
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 4px 1px #ccc;
+    border-style: outset;
+    border-width: 1px;
+    border-color: #b84406d9;
+}
+
+input[type='password']:invalid {
+    border-color: red;
 }
 
 input:not(:focus):valid {
     border-color: green;
+}
+
+input[type='password']:invalid + span::before {
+    content: '*Passwords do not match';
+    color: red;
+    font-size: 10px;
+}
+
+#confirm-pass {
+    align-items: baseline;
 }
 
 .submit {
