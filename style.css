@@ -92,6 +92,14 @@ body {
     color: rgba(54, 53, 53, 0.87);
 }
 
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2px;
+}
+
 .submit {
     padding: 20px 30px 0 30px;
 }
